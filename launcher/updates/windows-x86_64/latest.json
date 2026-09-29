@@ -1,0 +1,11 @@
+{
+  "version": "1.0.4",
+  "notes": "Обновление лаунчера Mtine",
+  "pub_date": "2026-09-29T11:29:49.131Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTmFsejVwMmVsbnRWM0NqbGJDVVMybmwxd1I3WW9IQzJpWTVGL1pDblBqYWdCaXh1b3A3ZklnMWNkMW5oU256VmkxSXI3azlSMXBNeC9YWjNZaUVXcVVMU1hUa0xHWVFNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwNjgxMjE0CWZpbGU6TUxfMS4wLjRfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjEuMC40ClJzMVpjeVUyVThua3haMzViNFl6RUM2WHd4ZjI4Y0I2K0tueUM3MVUxd21ZR2lLdUF2UVl3dS8wQ0J1bzVGc1VvTFhFTXBRcm5PZm5LcGNKOHF0ZkR3PT0K",
+      "url": "https://mtine-backend.onrender.com/launcher/updates/windows-x86_64/ML_1.0.4_x64-setup.exe"
+    }
+  }
+}
