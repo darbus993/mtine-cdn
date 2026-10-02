@@ -1,11 +1,11 @@
 {
-  "version": "1.0.9",
+  "version": "1.0.10",
   "notes": "Обновление лаунчера Mtine",
-  "pub_date": "2026-10-02T14:54:02.571Z",
+  "pub_date": "2026-10-02T16:40:35.229Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTmFsejVwMmVsbnZzSGZQVnNOQnZTY1ZJYm5FeWhIdTV6MUhVMWlkTmdBVCtjTkZxMlhxeXVDaGVqZGZZMXJIaGxoMS9SVGdFMzdCUUNRdjJkTWpRVnplK0tiNGhCcGc4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwOTUyODQyCWZpbGU6TUxfMS4wLjlfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjEuMC45CkxVeHcyT1ZwenpjcDczVElwUmdZSkxQdWhTSXBZOHk0UXpYMFcrYXJxZW0zUko3eVdoRnhoZU9YUm9IQXJGUjIySjY3blYySFFhQXhpZnk1UVBUSkFBPT0K",
-      "url": "https://mtine-backend.onrender.com/launcher/updates/windows-x86_64/ML_1.0.9_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTmFsejVwMmVsbm0xRGhpdFpxWjRvdjZ1K2prMW8ybldCVkVhRmxsSFZXTWNlTXdSekZybFBtNjAvem9DQU5iT0lzeEc0MjFYa2IyVkE5Um44VWc4RGtMK09EdEM2bUFNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwOTU5MjM0CWZpbGU6TUxfMS4wLjEwX3g2NC1zZXR1cC5leGUJdmVyc2lvbjoxLjAuMTAKQXdrNk1DRko2amhXZTNaR2M4MFoydDUrcGsxTHQ0My9leVo0ZEtUVitUdUtLS1BGL2t5WGt3KzNDc3BZeFl6RG00UytqUERSeTZzZDBqQ2VORjVxQ2c9PQo=",
+      "url": "https://mtine-backend.onrender.com/launcher/updates/windows-x86_64/ML_1.0.10_x64-setup.exe"
     }
   }
 }
