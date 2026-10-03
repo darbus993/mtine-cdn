@@ -1,0 +1,22 @@
+# Keeps the Mtine backend (Render free tier) awake: a free instance sleeps after
+# ~15 minutes without requests, and then the website, launcher sign-in and
+# updates take ~40 s to answer the next visitor. Pinging every 10 minutes
+# avoids that. Lives in this public repo because Actions minutes are free here.
+name: Не давать серверу уснуть
+
+on:
+  schedule:
+    - cron: '*/10 * * * *'
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Ping backend
+        run: |
+          curl -fsS --retry 3 --retry-delay 10 --max-time 90 \
+            https://mtine-backend.onrender.com/health
