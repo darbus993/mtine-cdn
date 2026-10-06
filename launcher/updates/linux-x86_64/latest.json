@@ -1,14 +1,14 @@
 {
-  "version": "1.0.21",
+  "version": "1.0.22",
   "notes": "Обновление лаунчера ML",
-  "pub_date": "2026-10-06T10:49:13.160Z",
+  "pub_date": "2026-10-06T21:25:45.682Z",
   "platforms": {
     "linux-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTmFsejVwMmVsbm5seDJxTmVVcFlTakdDN2gyckpGQjJxUFJ5dFVnb3U5amR1Y044NVNMdEZwQ290c2svMUZQNHN4cEx4eTNIUEZSSE5SQml6a2VyZG4xdXNsZVBWZEFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMjgzNzA0CWZpbGU6TUxfMS4wLjIxX2FtZDY0LkFwcEltYWdlCXZlcnNpb246MS4wLjIxCkhyVEJrdUZuU0x5Y2VvNFJkV2JGYUthTkcrYjlmek4vRUlzNVZ1ajhZQkNYYjBBUDd4aXdMS0FpTTMyb0cvY2YyRC80bURTZS9Ib1NobVVHVjB1eURnPT0K",
-      "url": "https://mtine-backend.onrender.com/launcher/releases/launcher-v1.0.21/ML_1.0.21_linux-x86_64.AppImage"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTmFsejVwMmVsbnRvQkZBQjdiSFlUSmVxVFRkUitocU9VbEJuazRjei82M3o4QzFMc3ZhNU5oR0o2NkJBWGVETjU0TDNwT1FMT09EZEtETExUZjZUYVU1dzlLSk5jK0FzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMzIxOTAxCWZpbGU6TUxfMS4wLjIyX2FtZDY0LkFwcEltYWdlCXZlcnNpb246MS4wLjIyCnUrb09wdUx0clA1ZldWUG9rUmNTei92NEdNRHZyVHV3SFc5cXAzY0ZvNzBoclQ3bVROZjg4VnBKNVgxOWtsU0ZGOCtPSUtWUUFBTTRFU2lGaFo2akF3PT0K",
+      "url": "https://mtine.xyz/launcher/releases/launcher-v1.0.22/ML_1.0.22_linux-x86_64.AppImage"
     }
   },
   "installers": {
-    "deb": "https://mtine-backend.onrender.com/launcher/releases/launcher-v1.0.21/ML_1.0.21_linux-amd64.deb"
+    "deb": "https://mtine.xyz/launcher/releases/launcher-v1.0.22/ML_1.0.22_linux-amd64.deb"
   }
 }
