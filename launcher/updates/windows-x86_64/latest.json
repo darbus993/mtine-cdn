@@ -1,14 +1,14 @@
 {
-  "version": "1.0.52",
+  "version": "1.0.53",
   "notes": "Обновление лаунчера Mtine",
-  "pub_date": "2026-10-13T18:07:41.009Z",
+  "pub_date": "2026-10-13T18:21:42.340Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTmFsejVwMmVsbm1rVzNDbDQvejVSYTN5SHlMUVZIeFdmbG4rTUxKV1plZmJxSUVMYUJFZnBxZmF5U0lvb1A3cnVVbFFWKzFRVUkzZnIzTzgvR0c5QWlrYkU3R3NYeVFZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxOTE0ODU3CWZpbGU6TUxfMS4wLjUyX3g2NC1zZXR1cC5leGUJdmVyc2lvbjoxLjAuNTIKK3FkSEZxZDY3NW12Z0lmcUJXOVJPTDFJalpyR2lERERmT2xRMS9md1dhSkNzL053RThiUzlFbitUeWZiM0lsaWhUSzNBZmJYZnYxYkkyWGtYUlE2QVE9PQo=",
-      "url": "https://mtine.xyz/launcher/updates/windows-x86_64/ML_1.0.52_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTmFsejVwMmVsbnRlbmhGWGtKSUwxMzN5YUlKUFFWYTBwc2lsaXhVOXh6eXNKeFB2VmVLTXh4elVvRVI5aXlVZEtlVG9zQmZYQVVqeldjb1FNcUozQ2RJd3lSbjBCUXdRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxOTE1Njk5CWZpbGU6TUxfMS4wLjUzX3g2NC1zZXR1cC5leGUJdmVyc2lvbjoxLjAuNTMKMndQelZuTi80RUpJT2QwRzRiVXdEbXhKVTJ6Qy9vaVdlMjhiTUs0RWlhZ3AwOGorOU1LeGZub3lDMmRaOXY0UWwxQUw5aWtTYnZEK0xXZ3dPYllSQnc9PQo=",
+      "url": "https://mtine.xyz/launcher/updates/windows-x86_64/ML_1.0.53_x64-setup.exe"
     }
   },
   "installers": {
-    "inno": "https://mtine.xyz/launcher/updates/windows-x86_64/ML-Setup-1.0.52.exe"
+    "inno": "https://mtine.xyz/launcher/updates/windows-x86_64/ML-Setup-1.0.53.exe"
   }
 }
