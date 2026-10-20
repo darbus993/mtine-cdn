@@ -1,0 +1,146 @@
+# Сборка лаунчера ML для macOS (Apple Silicon и Intel) и Linux и публикация
+# установщиков и файлов автообновления в этот репозиторий.
+#
+# Почему здесь, а не в репозитории с кодом: у публичных репозиториев сборки
+# бесплатные. Код лаунчера остаётся закрытым — сборка скачивает его из
+# закрытого репозитория ключом только для чтения (секрет SOURCE_DEPLOY_KEY).
+# В этом репозитории нет ни кода, ни секретов в файлах — только этот сценарий.
+#
+# Запуск: только вручную или из `Обновить-лаунчер.cmd` (workflow_dispatch с
+# версией) — посторонние запустить его не могут, форки секретов не получают.
+#
+# Секреты (Settings → Secrets and variables → Actions):
+#   SOURCE_DEPLOY_KEY          ключ только для чтения закрытого репозитория с кодом
+#   TAURI_SIGNING_PRIVATE_KEY  ключ подписи обновлений лаунчера
+name: Лаунчер для macOS и Linux
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Версия лаунчера (например 1.0.63); собирается тег launcher-v<версия>
+        required: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: launcher-desktop-${{ inputs.version }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Сборка ${{ matrix.platform }}
+    if: github.repository == 'darbus993/mtine-cdn'
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          # Обе сборки для Mac — на Apple Silicon; Intel собирается кросс-компиляцией.
+          - runner: macos-latest
+            target: aarch64-apple-darwin
+            platform: darwin-aarch64
+            bundles: app,dmg
+          - runner: macos-latest
+            target: x86_64-apple-darwin
+            platform: darwin-x86_64
+            bundles: app,dmg
+          - runner: ubuntu-22.04
+            target: x86_64-unknown-linux-gnu
+            platform: linux-x86_64
+            bundles: appimage,deb
+    runs-on: ${{ matrix.runner }}
+    steps:
+      - name: Версия
+        id: ver
+        shell: bash
+        run: |
+          v="${{ inputs.version }}"
+          if ! [[ "$v" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then echo "Bad version: $v"; exit 1; fi
+          echo "version=$v" >> "$GITHUB_OUTPUT"
+
+      - name: Код лаунчера (закрытый репозиторий)
+        uses: actions/checkout@v4
+        with:
+          repository: darbus993/mtine
+          ref: launcher-v${{ steps.ver.outputs.version }}
+          ssh-key: ${{ secrets.SOURCE_DEPLOY_KEY }}
+          persist-credentials: false
+          path: src
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: src/package-lock.json
+
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: ${{ matrix.target }}
+
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: src/launcher/src-tauri -> target
+          key: ${{ matrix.target }}
+
+      - name: Системные библиотеки (Linux)
+        if: runner.os == 'Linux'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libwebkit2gtk-4.1-dev libgtk-3-dev libayatana-appindicator3-dev \
+            librsvg2-dev patchelf libdbus-1-dev file
+
+      - run: npm ci
+        working-directory: src
+
+      - name: Сборка и подпись
+        working-directory: src/launcher
+        env:
+          VITE_API_BASE_URL: https://mtine.xyz
+          TAURI_SIGNING_PRIVATE_KEY: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY }}
+          TAURI_SIGNING_PRIVATE_KEY_PASSWORD: ''
+        run: >
+          npx tauri build --target ${{ matrix.target }} --bundles ${{ matrix.bundles }}
+          --config '{"version":"${{ steps.ver.outputs.version }}"}'
+
+      - name: Сбор файлов
+        working-directory: src
+        run: node tools/launcher-ci-publish/collect.mjs ${{ matrix.platform }} ${{ matrix.target }} ${{ steps.ver.outputs.version }} out
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.platform }}
+          path: src/out/
+          if-no-files-found: error
+
+  publish:
+    name: Публикация обновления
+    needs: build
+    if: github.repository == 'darbus993/mtine-cdn'
+    runs-on: ubuntu-latest
+    # Релиз и latest.json пишутся в этот же репозиторий — хватает встроенного токена.
+    permissions:
+      contents: write
+    steps:
+      - name: Код публикации (закрытый репозиторий)
+        uses: actions/checkout@v4
+        with:
+          repository: darbus993/mtine
+          ref: launcher-v${{ inputs.version }}
+          ssh-key: ${{ secrets.SOURCE_DEPLOY_KEY }}
+          persist-credentials: false
+          path: src
+          sparse-checkout: tools/launcher-ci-publish
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - uses: actions/download-artifact@v4
+        with:
+          path: dist
+
+      - name: Релиз и latest.json
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node src/tools/launcher-ci-publish/publish.mjs "${{ inputs.version }}" dist
