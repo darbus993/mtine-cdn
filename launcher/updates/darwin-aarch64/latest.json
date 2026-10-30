@@ -1,14 +1,14 @@
 {
-  "version": "1.1.6",
+  "version": "1.1.7",
   "notes": "Обновление лаунчера ML",
-  "pub_date": "2026-10-30T01:23:45.902Z",
+  "pub_date": "2026-10-30T19:04:40.121Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTmFsejVwMmVsbmlEZ3VOU0hVSEF1bFhjM2Z4QzBVcllzbFdhVW9GOVFTbUY2alJSNW82Q3k1cm8yUzRHV2ZQcVZmUGdJcDQ3WW9YdWhTNFAwMW41c1AyeGMrVGtiTFFVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzMzIzMjYwCWZpbGU6TUwuYXBwLnRhci5negl2ZXJzaW9uOjEuMS42Cm9kMURqenZldjVrRUQ0S1ZxdlRBWndkTS9lZXBCeE1HemxITWJrY0QxOVNxVUZTVnRqS284V3ZPMHllZlZsZkxQcWJzT0dUekU2anR2c2pCZ0NVOUNRPT0K",
-      "url": "https://mtine.xyz/launcher/releases/launcher-v1.1.6/ML_1.1.6_macos-apple.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTmFsejVwMmVsbm5BZmszMVRLdnJrclU1anl6di9JYW5tUFF6L0NaQ1BtYTJLOEl6YlRhNUgzYjhTcTAyUjRtdVpCUEFKVm9BT1RYTUhDOWFsaVYyZVVaaTVsK1dwT2drPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzMzg3MDM0CWZpbGU6TUwuYXBwLnRhci5negl2ZXJzaW9uOjEuMS43CmZuZFIyN2xkTC9uR0tDM3RtQlYyNXFGMmVQMkZPNzk4VU9iNklmNVEwUjZQOHJHUnZwd3RzR0RkU1BzbDlMVW5vdVhBcUxkYVJMdnVQLzJJZnBXREJRPT0K",
+      "url": "https://mtine.xyz/launcher/releases/launcher-v1.1.7/ML_1.1.7_macos-apple.app.tar.gz"
     }
   },
   "installers": {
-    "dmg": "https://mtine.xyz/launcher/releases/launcher-v1.1.6/ML_1.1.6_macos-apple.dmg"
+    "dmg": "https://mtine.xyz/launcher/releases/launcher-v1.1.7/ML_1.1.7_macos-apple.dmg"
   }
 }

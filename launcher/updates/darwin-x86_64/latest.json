@@ -1,14 +1,14 @@
 {
-  "version": "1.1.6",
+  "version": "1.1.7",
   "notes": "Обновление лаунчера ML",
-  "pub_date": "2026-10-30T01:23:45.904Z",
+  "pub_date": "2026-10-30T19:04:40.123Z",
   "platforms": {
     "darwin-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTmFsejVwMmVsbm9mL2ZubDJUWnRSeHhKQUNyTkVjQmJZZVRlSEdIU3BhQndubzVabit0c3l2a0IwMDlQNGtPSTJ6Vi9TUzh0ampzbDEwMlhvaE5XZjZUZG5qc2RzeGdJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzMzIzMTQxCWZpbGU6TUwuYXBwLnRhci5negl2ZXJzaW9uOjEuMS42CmZXTHhWZDF6Um9GbjV5czkzd2hXTHg2RkNPWU1xeUdXMnZjc2U5QnlFTFFUeGJCQUVyZEFqZjNZUGhrS0lGT2JBeVltalk1OWZHL1NRMEYydWJ1ZkJBPT0K",
-      "url": "https://mtine.xyz/launcher/releases/launcher-v1.1.6/ML_1.1.6_macos-intel.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTmFsejVwMmVsbmt0bXJ6aW4waUFNUHRtVU9UTDlwYU9FUlRDeXcyM1JaK0FaRU1sanlTbjZBSDJaUWVNZ3k1Y0VMaDRRWTFDcTE5MUswd0VpaEw0WEVTbytWVDFKSXc4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzMzg2OTgxCWZpbGU6TUwuYXBwLnRhci5negl2ZXJzaW9uOjEuMS43CnpERE5nNkQ3Tk5Nb1ZhUU5CeUtqRncwNU4vbk1PZ09maWdHc3lzVW01VkdEVDFxTmN4U283RUhSY2RLVWp3Z3NnV3FxOEhzVmFXY1FnK3h3NU9zQ0RBPT0K",
+      "url": "https://mtine.xyz/launcher/releases/launcher-v1.1.7/ML_1.1.7_macos-intel.app.tar.gz"
     }
   },
   "installers": {
-    "dmg": "https://mtine.xyz/launcher/releases/launcher-v1.1.6/ML_1.1.6_macos-intel.dmg"
+    "dmg": "https://mtine.xyz/launcher/releases/launcher-v1.1.7/ML_1.1.7_macos-intel.dmg"
   }
 }
