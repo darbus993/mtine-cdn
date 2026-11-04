@@ -1,10 +1,10 @@
 {
   "version": "1.1.9",
   "notes": "Обновление лаунчера ML",
-  "pub_date": "2026-11-04T01:18:01.630Z",
+  "pub_date": "2026-11-04T01:24:12.122Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTmFsejVwMmVsbnFQY2c2VUx3UUJrYmFDbFVySGZseHdaWER5QnEzWmluMVNEcXdMaUZmUlRlY1lyYmJkK24wRlMrdjRxbStlMWVjc0dteDdPRlJaTkVDZ0pYbW9paFE4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzNzU0OTc0CWZpbGU6TUwuYXBwLnRhci5negl2ZXJzaW9uOjEuMS45CkJob2NRTnUrS3JuMXFCaHprWXBLUVVZajhHM0tjT1dtR2FCMUc5OW1IUzEwMkpWMXZUdHNMbnlLc1c0QWQzVWhyenBJckhZV2h4VFJuRU13dFhXcUNRPT0K",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTmFsejVwMmVsbnVWM0RUV0o0eFBzaGlucU9VYkp6aGtPdVFCNzdGenlMMUh2c3dnNjFMdkttSU1jU3RFKzU1ZGI5NWQvQW1RNjZDSmUySmdlSnNyVVp1VXd6U0xITGdRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzNzU1NDE3CWZpbGU6TUwuYXBwLnRhci5negl2ZXJzaW9uOjEuMS45CkZydGVlSFBjdVZ4MkxIZEc0bHh4TjlIejhDNy9VcXp4WW4wS3lxUE9OM01ocm9RbnVRQk9maURFcFhKV243QmxMREg5UnNQWHRwL1gzNktvV0t5ZEJRPT0K",
       "url": "https://mtine.xyz/launcher/releases/launcher-v1.1.9/ML_1.1.9_macos-apple.app.tar.gz"
     }
   },
